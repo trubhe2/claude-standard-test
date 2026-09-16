@@ -1,0 +1,17 @@
+# Config for BetaHuhn/repo-file-sync-action.
+# https://github.com/BetaHuhn/repo-file-sync-action
+#
+# Each top-level key is an arbitrary group name. Replace the placeholders
+# below with the real files to sync and the target repos to sync them to.
+
+group:
+  files:
+    - source: README.md
+      dest: README.md
+    - source: .claude
+      dest: .claude
+  repos: |
+    trubhe2/claude-test-a
+    trubhe2/claude-test-b
+PR_LABELS:
+    - claude-sync
