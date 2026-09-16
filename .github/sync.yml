@@ -13,5 +13,5 @@ group:
     - source: .claude
       dest: .claude
   repos: |
-    trubhe2/claude-test-a
-    trubhe2/claude-test-b
+    trubhe2/claude-test-repo-a
+    trubhe2/claude-test-repo-b
