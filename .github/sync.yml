@@ -1,8 +1,10 @@
 # Config for BetaHuhn/repo-file-sync-action.
 # https://github.com/BetaHuhn/repo-file-sync-action
 #
-# Each top-level key is an arbitrary group name. Replace the placeholders
-# below with the real files to sync and the target repos to sync them to.
+# Only the literal top-level key `group` is recognized here (any other
+# top-level key is misparsed as a repo name and crashes the action).
+# Global options like PR_LABELS are NOT set in this file - they're action
+# inputs, set in .github/workflows/sync.yml's `with:` block instead.
 
 group:
   files:
@@ -13,5 +15,3 @@ group:
   repos: |
     trubhe2/claude-test-a
     trubhe2/claude-test-b
-PR_LABELS:
-    - claude-sync
